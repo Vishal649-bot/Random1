@@ -17,10 +17,17 @@ console.log(titles[0]);
 // console.log(items);
 
 
-var li = document.getElementsByTagName('li')
+// var li = document.getElementsByClassName('title')
 
-console.log(li);
-for (let i = 0; i < li.length; i++) {
-    li[i].style.backgroundColor = 'gray'
+// console.log(li);
+// for (let i = 0; i < li.length; i++) {
+//     li[i].style.backgroundColor = 'gray'
     
-}
+// }
+let secondli = document.querySelector('.list-group-item:nth-child(2)')
+console.log(secondli);
+secondli.style.backgroundColor = 'green'
+
+let thirdli = document.querySelector('.list-group-item:nth-child(3)')
+console.log(thirdli);
+thirdli.style.display = 'none'
